@@ -11,7 +11,7 @@
   justify-content: center;
   padding: 1rem 2rem 4rem 2rem;
   min-height: 100vh;
-  background-image: url('/mountainphoto.png');
+  background-image: url('/rocksimagenumber2.png');
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -126,6 +126,58 @@
   cursor: default;
   width: 100%;
   max-width: 800px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 550px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+  transform-origin: center center;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.slideshow-image.position-0 {
+  z-index: 3;
+  transform: scale(1);
+  opacity: 1;
+  animation: popIn 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.slideshow-image.position-1,
+.slideshow-image.position-2 {
+  z-index: 1;
+  transform: scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideshow-image.active {
+  z-index: 4;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .applications-list li:hover {
@@ -379,6 +431,16 @@
     font-size: 1.2rem;
     text-align: left;
     padding-left: 2rem;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    height: 350px;
+    margin-top: 2rem;
+  }
+
+  .slideshow-image {
+    border-radius: 8px;
   }
 
   .showcase-section {

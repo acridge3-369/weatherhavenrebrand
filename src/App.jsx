@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react'
+import { Suspense, useState, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import ModelViewer from './components/ModelViewer'
 import Header from './components/Header'
@@ -6,6 +6,21 @@ import './App.css'
 
 function App() {
   const [showMap, setShowMap] = useState(false)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+  const slides = [
+    '/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
+    '/002_peru_weatherhaven-peru-home-military.jpg',
+    '/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg'
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }, 4000) // Change slide every 4 seconds
+
+    return () => clearInterval(interval)
+  }, [slides.length])
 
   return (
     <div className="app">
@@ -24,6 +39,19 @@ function App() {
             <li>Mobile Centres and Field Hospitals</li>
             <li>Mining, Construction and Research/Exploration</li>
           </ul>
+          <div className="slideshow-container">
+            {slides.map((slide, index) => {
+              const position = (index - currentSlide + slides.length) % slides.length
+              return (
+                <img
+                  key={index}
+                  src={slide}
+                  alt={`Weatherhaven deployment ${index + 1}`}
+                  className={`slideshow-image ${position === 0 ? 'active' : ''} position-${position}`}
+                />
+              )
+            })}
+          </div>
         </div>
       </section>
       <section className="showcase-section">

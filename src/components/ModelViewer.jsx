@@ -7,7 +7,7 @@ function Model({ url }) {
     <primitive 
       object={scene} 
       scale={1.8}
-      position={[-3, 0, 0]}
+      position={[1, 0, 0]}
       rotation={[0, 0.4, 0]}
     />
   )
@@ -15,7 +15,7 @@ function Model({ url }) {
 
 function ModelViewer() {
   // GLB model path
-  const modelPath = '/models/green.glb'
+  const modelPath = '/models/beige.glb'
 
   return (
     <>
