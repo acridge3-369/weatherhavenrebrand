@@ -15,7 +15,7 @@ function Model({ url }) {
 
 function ModelViewer() {
   // GLB model path
-  const modelPath = '/models/superdecentmodels.glb'
+  const modelPath = '/models/beige.glb'
 
   return (
     <>
