@@ -12,7 +12,7 @@ function App() {
       <section className="showcase-section">
         <div className="canvas-container">
           <Canvas
-            camera={{ position: [0, 0, 5], fov: 50 }}
+            camera={{ position: [0, 0.5, 5], fov: 50 }}
             gl={{ antialias: true }}
           >
             <ambientLight intensity={0.5} />
