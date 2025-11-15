@@ -6,7 +6,7 @@ function Model({ url }) {
   return (
     <primitive 
       object={scene} 
-      scale={1} 
+      scale={1}
       position={[0, -1, 0]}
       rotation={[0, 0.314, 0]}
     />
@@ -20,11 +20,9 @@ function ModelViewer() {
   return (
     <>
       <OrbitControls 
-        enableZoom={true}
-        enablePan={true}
-        enableRotate={true}
-        minDistance={2}
-        maxDistance={10}
+        enableZoom={false}
+        enablePan={false}
+        enableRotate={false}
       />
       <Environment preset="city" />
       <Model url={modelPath} />
