@@ -6,16 +6,16 @@ function Model({ url }) {
   return (
     <primitive 
       object={scene} 
-      scale={1}
-      position={[0, -1, 0]}
-      rotation={[0, 0.314, 0]}
+      scale={1.8}
+      position={[0, 0, 0]}
+      rotation={[0, 0, 0]}
     />
   )
 }
 
 function ModelViewer() {
   // GLB model path
-  const modelPath = '/models/Greenopenmodel.glb'
+  const modelPath = '/models/superdecentmodels.glb'
 
   return (
     <>
