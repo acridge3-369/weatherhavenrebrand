@@ -24,8 +24,8 @@ function Model({ url }) {
 }
 
 function ModelViewer() {
-  // Default to a placeholder path - user should replace with their GLB file path
-  const modelPath = '/models/model.glb'
+  // GLB model path
+  const modelPath = '/models/Greenopenmodel.glb'
 
   return (
     <>
