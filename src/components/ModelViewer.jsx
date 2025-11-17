@@ -8,7 +8,7 @@ function Model({ url }) {
       object={scene} 
       scale={1.8}
       position={[1, 0, 0]}
-      rotation={[0, 0.4, 0]}
+      rotation={[0, 0.3, 0]}
     />
   )
 }
