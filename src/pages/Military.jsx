@@ -1,6 +1,4 @@
-import { Suspense, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import ModelViewer from '../components/ModelViewer'
+import { useState } from 'react'
 import Header from '../components/Header'
 import LocationsModal from '../components/LocationsModal'
 import './Military.css'
@@ -10,6 +8,9 @@ function Military() {
   const [activeImageIndex1, setActiveImageIndex1] = useState(0)
   const [activeImageIndex2, setActiveImageIndex2] = useState(0)
   const [activeImageIndex3, setActiveImageIndex3] = useState(0)
+  const [activeImageIndex4, setActiveImageIndex4] = useState(0)
+  const [activeImageIndex5, setActiveImageIndex5] = useState(0)
+  const [activeImageIndex6, setActiveImageIndex6] = useState(0)
   
   const showcase1 = [
     {
@@ -32,6 +33,30 @@ function Military() {
       image: '/military maintenance.jpg',
       alt: 'Military Maintenance',
       text: 'Maintenance camps'
+    }
+  ]
+
+  const showcase4 = [
+    {
+      image: '/426_uk_EHMECC-Power-Generation-and-Environmental-Control-.jpg',
+      alt: 'Power Generation',
+      text: 'Power Generation'
+    }
+  ]
+
+  const showcase5 = [
+    {
+      image: '/military dining hall.jpg',
+      alt: 'Military Dining Hall',
+      text: 'Dining Halls'
+    }
+  ]
+
+  const showcase6 = [
+    {
+      image: '/storage.jpg',
+      alt: 'Storage',
+      text: 'Storage'
     }
   ]
 
@@ -263,33 +288,59 @@ function Military() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section className="military-3d-showcase-section">
-        <div className="military-showcase-content">
-          <h2 className="military-section-title">3D Model Showcase</h2>
-          <div className="military-canvas-container">
-            <Canvas
-              camera={{ position: [2.5, 3, 13], fov: 50 }}
-              gl={{ antialias: true }}
-            >
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[10, 10, 5]} intensity={1} />
-              <pointLight position={[-10, -10, -5]} intensity={0.5} />
-              <Suspense fallback={null}>
-                <ModelViewer />
-              </Suspense>
-            </Canvas>
+          <div className="military-showcase-grid">
+            <div className="military-showcase-item">
+              <div className="military-showcase-image-wrapper">
+                {showcase4.map((item, index) => (
+                  <img 
+                    key={index}
+                    src={item.image} 
+                    alt={item.alt}
+                    className={`military-showcase-image ${index === activeImageIndex4 ? 'active' : ''}`}
+                  />
+                ))}
+              </div>
+              <p className="military-showcase-text">
+                <span className="military-showcase-bullet">▶</span>
+                {showcase4[activeImageIndex4].text}
+              </p>
+            </div>
+
+            <div className="military-showcase-item">
+              <div className="military-showcase-image-wrapper">
+                {showcase5.map((item, index) => (
+                  <img 
+                    key={index}
+                    src={item.image} 
+                    alt={item.alt}
+                    className={`military-showcase-image ${index === activeImageIndex5 ? 'active' : ''}`}
+                  />
+                ))}
+              </div>
+              <p className="military-showcase-text">
+                <span className="military-showcase-bullet">▶</span>
+                {showcase5[activeImageIndex5].text}
+              </p>
+            </div>
+
+            <div className="military-showcase-item">
+              <div className="military-showcase-image-wrapper">
+                {showcase6.map((item, index) => (
+                  <img 
+                    key={index}
+                    src={item.image} 
+                    alt={item.alt}
+                    className={`military-showcase-image ${index === activeImageIndex6 ? 'active' : ''}`}
+                  />
+                ))}
+              </div>
+              <p className="military-showcase-text">
+                <span className="military-showcase-bullet">▶</span>
+                {showcase6[activeImageIndex6].text}
+              </p>
+            </div>
           </div>
-          <a 
-            href="https://configurator-ecru.vercel.app" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="military-configure-button"
-          >
-            Configure Military Shelter
-          </a>
         </div>
       </section>
 

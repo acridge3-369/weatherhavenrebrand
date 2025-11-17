@@ -27,7 +27,7 @@ function LocationsModal({ isOpen, onClose, locations }) {
       <div className="locations-modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="locations-modal-close" onClick={onClose}>×</button>
         <div className="locations-modal-header">
-          <h2 className="locations-modal-title">Defence & Peacekeeping Deployments</h2>
+          <h2 className="locations-modal-title">Defence and Peacekeeping Around the World</h2>
         </div>
         <div className="locations-modal-body">
           <div className="locations-countries-grid">
