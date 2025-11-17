@@ -85,9 +85,9 @@ function Military() {
   }
   
   const militaryImages = [
-    '/122_uk_services-maintenance-banner-1024x649.jpg',
+    '/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
     '/002_peru_weatherhaven-peru-home-military.jpg',
-    '/404_uk_Series-4-Staff-Camp-Canada-2048x1419.jpeg'
+    '/122_uk_services-maintenance-banner-1024x649.jpg'
   ]
 
   const locationsData = [
