@@ -1,0 +1,724 @@
+.military-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem 2rem;
+  min-height: 100vh;
+  background-image: url('/rocksimagenumber2.png');
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.military-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.military-hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3F3F3F 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.military-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.military-hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.military-hero-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.9;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.military-image-bullets-section {
+  padding: 4rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-image-bullets-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.military-image-bullets-image {
+  width: 70%;
+  max-width: 800px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: block;
+}
+
+.military-bullets-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.military-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.military-bullet-arrow {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.military-bullet-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.military-bullet-text strong {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.military-intro-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-intro-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.military-section-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.military-intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.military-intro-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.military-intro-item-single-line {
+  white-space: nowrap;
+}
+
+.military-intro-item-single-line .military-intro-text {
+  white-space: nowrap;
+}
+
+.military-intro-item:hover {
+  transform: translateX(8px);
+}
+
+.military-intro-arrow {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.military-intro-item:hover .military-intro-arrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+.military-intro-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.military-locations-button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.military-locations-button:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+.military-features-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-features-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.military-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.military-feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.military-feature-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.military-feature-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.military-feature-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.military-3d-showcase-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-showcase-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-showcase-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.military-canvas-container {
+  width: 100%;
+  max-width: 100%;
+  height: 65vh;
+  min-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #3F3F3F;
+}
+
+.military-configure-button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.military-configure-button:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.military-gallery-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-gallery-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.military-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.military-gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  height: 300px;
+}
+
+.military-gallery-item:hover {
+  transform: translateY(-4px);
+}
+
+.military-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.military-applications-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.military-applications-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.military-applications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.military-applications-list li {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.military-applications-list li:nth-child(even) {
+  margin-left: 7rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.military-applications-list li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.military-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: 100%;
+  max-width: 1600px;
+  margin: 2rem 0;
+}
+
+.military-showcase-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.military-showcase-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.military-showcase-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.military-showcase-image.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.military-showcase-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  width: 100%;
+  text-transform: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.military-showcase-bullet {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  opacity: 0.9;
+}
+
+.military-showcase-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 0;
+  z-index: 10;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.military-showcase-button-prev {
+  left: 0.5rem;
+}
+
+.military-showcase-button-next {
+  right: 0.5rem;
+}
+
+.military-showcase-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.military-showcase-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.military-showcase-dots {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.military-showcase-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.military-showcase-dot:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.military-showcase-dot.active {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .military-hero-section {
+    padding: 6rem 1rem 3rem 1rem;
+    min-height: 50vh;
+  }
+
+  .military-hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+
+  .military-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .military-image-bullets-section {
+    padding: 3rem 1rem;
+  }
+
+  .military-image-bullets-image {
+    width: 100%;
+    height: 400px;
+    max-width: none;
+  }
+
+  .military-bullets-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .military-bullet-item {
+    min-width: 100%;
+  }
+
+  .military-bullet-text {
+    font-size: 1rem;
+  }
+
+  .military-intro-section,
+  .military-features-section,
+  .military-showcase-section,
+  .military-3d-showcase-section,
+  .military-gallery-section,
+  .military-applications-section {
+    padding: 4rem 1rem;
+  }
+
+  .military-section-title {
+    font-size: 2rem;
+  }
+
+  .military-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .military-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .military-applications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .military-applications-list li:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .military-showcase-container {
+    gap: 1rem;
+  }
+
+  .military-showcase-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .military-showcase-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .military-showcase-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .military-showcase-button {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+
+  .military-canvas-container {
+    height: 50vh;
+    min-height: 400px;
+  }
+}
+

@@ -32,6 +32,8 @@
   padding: 0.5rem 1rem;
   transition: opacity 0.3s ease;
   opacity: 0.95;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .nav-item:hover {
