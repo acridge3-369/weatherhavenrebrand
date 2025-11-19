@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import './ExpandingShelters.css'
+import WeatherhavenText from '../components/WeatherhavenText'
 
 function ExpandingShelters() {
   return (
@@ -11,16 +12,16 @@ function ExpandingShelters() {
           <p className="expanding-shelters-hero-subtitle">Rugged Expandable Container Solutions</p>
         </div>
       </section>
-      
+
       <section className="expanding-shelters-intro-section">
         <div className="expanding-shelters-intro-content">
           <h2 className="expanding-shelters-section-title">About Expanding Shelters</h2>
           <p className="expanding-shelters-description">
-            Weatherhaven's range of rugged expandable container shelters - designed with logistical efficiency in mind - deliver superior functionality in every climate and location. Utilizing space-efficient ISO shipping container technology, Weatherhaven's expandable container shelters can be readily shipped anywhere on Earth by air, rail, road, or sea.
+            <WeatherhavenText />'s range of rugged expandable container shelters - designed with logistical efficiency in mind - deliver superior functionality in every climate and location. Utilizing space-efficient ISO shipping container technology, <WeatherhavenText />'s expandable container shelters can be readily shipped anywhere on Earth by air, rail, road, or sea.
           </p>
           <div className="expanding-shelters-image-wrapper">
-            <img 
-              src="/expandablecontainer1.jpg" 
+            <img
+              src="/expandablecontainer1.jpg"
               alt="Expanding Shelters"
               className="expanding-shelters-main-image"
             />
@@ -29,8 +30,8 @@ function ExpandingShelters() {
             <div className="expanding-shelters-product-item">
               <h3 className="expanding-shelters-product-title">Mobile Expandable Container Configuration™ (MECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
-                <img 
-                  src="/placeholder.jpg" 
+                <img
+                  src="/placeholder.jpg"
                   alt="MECC"
                   className="expanding-shelters-product-image"
                 />
@@ -42,8 +43,8 @@ function ExpandingShelters() {
             <div className="expanding-shelters-product-item">
               <h3 className="expanding-shelters-product-title">Extended Height Mobile Expandable Container Configuration™ (EHMECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
-                <img 
-                  src="/placeholder.jpg" 
+                <img
+                  src="/placeholder.jpg"
                   alt="EHMECC"
                   className="expanding-shelters-product-image"
                 />
@@ -55,8 +56,8 @@ function ExpandingShelters() {
             <div className="expanding-shelters-product-item">
               <h3 className="expanding-shelters-product-title">Tactical Redeployable Expandable Container Capability™ (TRECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
-                <img 
-                  src="/placeholder.jpg" 
+                <img
+                  src="/placeholder.jpg"
                   alt="TRECC"
                   className="expanding-shelters-product-image"
                 />
@@ -68,8 +69,8 @@ function ExpandingShelters() {
             <div className="expanding-shelters-product-item">
               <h3 className="expanding-shelters-product-title">Hardwall Expandable Redeployable Container™ (HERCon™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
-                <img 
-                  src="/placeholder.jpg" 
+                <img
+                  src="/placeholder.jpg"
                   alt="HERCon"
                   className="expanding-shelters-product-image"
                 />
@@ -81,8 +82,8 @@ function ExpandingShelters() {
             <div className="expanding-shelters-product-item">
               <h3 className="expanding-shelters-product-title">Air-Transportable Expandable Pallet Shelter (ATEPS)</h3>
               <div className="expanding-shelters-product-image-wrapper">
-                <img 
-                  src="/placeholder.jpg" 
+                <img
+                  src="/placeholder.jpg"
                   alt="ATEPS"
                   className="expanding-shelters-product-image"
                 />
