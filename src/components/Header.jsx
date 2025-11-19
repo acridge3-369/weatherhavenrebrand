@@ -10,6 +10,8 @@ function Header() {
         <Link to="/military" className="nav-item">Military</Link>
         <button className="nav-item">Medical</button>
         <button className="nav-item">Innovation</button>
+        <Link to="/company" className="nav-item">Company</Link>
+        <Link to="/contact" className="nav-item">Contact</Link>
       </nav>
     </header>
   )

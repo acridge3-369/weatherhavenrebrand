@@ -2,6 +2,7 @@ import { Suspense, useState, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import ModelViewer from '../components/ModelViewer'
 import Header from '../components/Header'
+import WeatherhavenText from '../components/WeatherhavenText'
 import NewsModal from '../components/NewsModal'
 import '../App.css'
 
@@ -10,7 +11,7 @@ function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [showNewsModal, setShowNewsModal] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState(null)
-  
+
   const slides = [
     '/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
     '/002_peru_weatherhaven-peru-home-military.jpg',
@@ -30,7 +31,7 @@ function Home() {
       <Header />
       <section className="home-section">
         <div className="title-container">
-          <h1 className="title">weatherhaven</h1>
+          <h1 className="title"><WeatherhavenText /></h1>
           <p className="slogan">Rapidly Deploying Mobile Infrastructure Anywhere in the World</p>
         </div>
       </section>
@@ -66,9 +67,9 @@ function Home() {
           </button>
           {showMap && (
             <div className="map-container">
-              <iframe 
-                src="https://www.google.com/maps/d/embed?mid=1WjBWwEmcEb7M-4sl1pXu_b3MwyBTUm96&ehbc=2E312F" 
-                width="100%" 
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1WjBWwEmcEb7M-4sl1pXu_b3MwyBTUm96&ehbc=2E312F"
+                width="100%"
                 height="480"
                 style={{ border: 0 }}
                 allowFullScreen
@@ -89,7 +90,7 @@ function Home() {
               <directionalLight position={[10, 10, 5]} intensity={1} />
               <pointLight position={[-10, -10, -5]} intensity={0.5} />
               <Suspense fallback={null}>
-                <ModelViewer 
+                <ModelViewer
                   enableInteractions={true}
                   enableZoom={false}
                   target={[0, 0, 0]}
@@ -106,9 +107,9 @@ function Home() {
           </div>
           <h3 className="customize-title">Customize to Your Needs</h3>
           <p className="customize-bullet">Fully Customizable Models, With Different Colours, Sizes, Interiors and Deployments</p>
-          <a 
-            href="https://configurator-ecru.vercel.app" 
-            target="_blank" 
+          <a
+            href="https://configurator-ecru.vercel.app"
+            target="_blank"
             rel="noopener noreferrer"
             className="configure-button"
           >
@@ -120,8 +121,8 @@ function Home() {
         <div className="news-content">
           <h2 className="news-title">News & Updates</h2>
           <div className="news-grid">
-            <article 
-              className="news-item" 
+            <article
+              className="news-item"
               onClick={() => {
                 setSelectedArticle('compotech')
                 setShowNewsModal(true)
@@ -132,7 +133,7 @@ function Home() {
               <p className="news-item-date">26 May 2023</p>
               <p className="news-item-text">This is the abstract text about this article</p>
             </article>
-            <article 
+            <article
               className="news-item"
               onClick={() => {
                 setSelectedArticle('advisory-board')
@@ -144,7 +145,7 @@ function Home() {
               <p className="news-item-date">5 October 2022</p>
               <p className="news-item-text">This is the abstract text about this article</p>
             </article>
-            <article 
+            <article
               className="news-item"
               onClick={() => {
                 setSelectedArticle('40th-anniversary')
@@ -207,7 +208,7 @@ function Home() {
             sections: [
               {
                 title: "ABOUT WEATHERHAVEN:",
-                text: "Weatherhaven is a leading international supplier of mobile temporary infrastructure for key military, commercial, government and medical applications worldwide. With more than 50 patents and production operations in Canada, US, Peru, Brazil, South Africa, Turkey, UAE and the UK, the company has engineered, produced, and installed their solutions in more than 96 countries and on seven continents."
+                text: <span><WeatherhavenText /> is a leading international supplier of mobile temporary infrastructure for key military, commercial, government and medical applications worldwide. With more than 50 patents and production operations in Canada, US, Peru, Brazil, South Africa, Turkey, UAE and the UK, the company has engineered, produced, and installed their solutions in more than 96 countries and on seven continents.</span>
               },
               {
                 title: "ABOUT COMPOTECH INC:",

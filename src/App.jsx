@@ -5,6 +5,8 @@ import Products from './pages/Products'
 import SoftShelters from './pages/SoftShelters'
 import ExpandingShelters from './pages/ExpandingShelters'
 import Accessories from './pages/Accessories'
+import Company from './pages/Company'
+import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
@@ -19,6 +21,8 @@ function App() {
         <Route path="/products/expanding-shelters" element={<ExpandingShelters />} />
         <Route path="/products/accessories" element={<Accessories />} />
         <Route path="/military" element={<Military />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   )
