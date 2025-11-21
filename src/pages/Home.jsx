@@ -90,8 +90,10 @@ function Home() {
               <pointLight position={[-10, -10, -5]} intensity={0.5} />
               <Suspense fallback={null}>
                 <ModelViewer 
-                  enableInteractions={true}
+                  enableInteractions={false}
                   enableZoom={false}
+                  enableRotate={false}
+                  enablePan={false}
                   target={[0, 0, 0]}
                 />
               </Suspense>
