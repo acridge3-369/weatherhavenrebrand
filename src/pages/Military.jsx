@@ -14,7 +14,7 @@ function Military() {
   
   const showcase1 = [
     {
-      image: '/command post.jpg',
+      image: '/images/command post.jpg',
       alt: 'Military Command Post',
       text: 'Command Posts'
     }
@@ -22,7 +22,7 @@ function Military() {
 
   const showcase2 = [
     {
-      image: '/hosptial.jpg',
+      image: '/images/hosptial.jpg',
       alt: 'Military Hospital',
       text: 'Field Hospitals'
     }
@@ -30,7 +30,7 @@ function Military() {
 
   const showcase3 = [
     {
-      image: '/military maintenance.jpg',
+      image: '/images/military maintenance.jpg',
       alt: 'Military Maintenance',
       text: 'Maintenance camps'
     }
@@ -38,7 +38,7 @@ function Military() {
 
   const showcase4 = [
     {
-      image: '/426_uk_EHMECC-Power-Generation-and-Environmental-Control-.jpg',
+      image: '/images/426_uk_EHMECC-Power-Generation-and-Environmental-Control-.jpg',
       alt: 'Power Generation',
       text: 'Power Generation'
     }
@@ -46,7 +46,7 @@ function Military() {
 
   const showcase5 = [
     {
-      image: '/military dining hall.jpg',
+      image: '/images/military dining hall.jpg',
       alt: 'Military Dining Hall',
       text: 'Dining Halls'
     }
@@ -54,7 +54,7 @@ function Military() {
 
   const showcase6 = [
     {
-      image: '/storage.jpg',
+      image: '/images/storage.jpg',
       alt: 'Storage',
       text: 'Storage'
     }
@@ -85,9 +85,9 @@ function Military() {
   }
   
   const militaryImages = [
-    '/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
-    '/002_peru_weatherhaven-peru-home-military.jpg',
-    '/122_uk_services-maintenance-banner-1024x649.jpg'
+    '/images/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
+    '/images/002_peru_weatherhaven-peru-home-military.jpg',
+    '/images/122_uk_services-maintenance-banner-1024x649.jpg'
   ]
 
   const locationsData = [
@@ -193,7 +193,7 @@ function Military() {
       <section className="military-image-bullets-section">
         <div className="military-image-bullets-content">
           <img 
-            src="/militarypic.jpg" 
+            src="/images/militarypic.jpg" 
             alt="Military deployment"
             className="military-image-bullets-image"
           />

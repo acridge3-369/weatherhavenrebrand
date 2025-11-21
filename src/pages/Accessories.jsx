@@ -20,7 +20,7 @@ function Accessories() {
           </p>
           <div className="accessories-image-wrapper">
             <img 
-              src="/solarshade6.jpg" 
+              src="/images/solarshade6.jpg" 
               alt="Accessories"
               className="accessories-main-image"
             />
@@ -30,7 +30,7 @@ function Accessories() {
               <h3 className="accessories-product-title">Solar Shades</h3>
               <div className="accessories-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="Solar Shades"
                   className="accessories-product-image"
                 />
@@ -43,7 +43,7 @@ function Accessories() {
               <h3 className="accessories-product-title">Interconnectors and Corridors</h3>
               <div className="accessories-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="Interconnectors and Corridors"
                   className="accessories-product-image"
                 />

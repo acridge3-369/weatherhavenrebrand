@@ -12,9 +12,9 @@ function Home() {
   const [selectedArticle, setSelectedArticle] = useState(null)
   
   const slides = [
-    '/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
-    '/002_peru_weatherhaven-peru-home-military.jpg',
-    '/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg'
+    '/images/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg',
+    '/images/002_peru_weatherhaven-peru-home-military.jpg',
+    '/images/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg'
   ]
 
   useEffect(() => {

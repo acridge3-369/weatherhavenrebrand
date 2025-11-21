@@ -20,7 +20,7 @@ function ExpandingShelters() {
           </p>
           <div className="expanding-shelters-image-wrapper">
             <img 
-              src="/expandablecontainer1.jpg" 
+              src="/images/expandablecontainer1.jpg" 
               alt="Expanding Shelters"
               className="expanding-shelters-main-image"
             />
@@ -30,7 +30,7 @@ function ExpandingShelters() {
               <h3 className="expanding-shelters-product-title">Mobile Expandable Container Configuration™ (MECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="MECC"
                   className="expanding-shelters-product-image"
                 />
@@ -43,7 +43,7 @@ function ExpandingShelters() {
               <h3 className="expanding-shelters-product-title">Extended Height Mobile Expandable Container Configuration™ (EHMECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="EHMECC"
                   className="expanding-shelters-product-image"
                 />
@@ -56,7 +56,7 @@ function ExpandingShelters() {
               <h3 className="expanding-shelters-product-title">Tactical Redeployable Expandable Container Capability™ (TRECC™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="TRECC"
                   className="expanding-shelters-product-image"
                 />
@@ -69,7 +69,7 @@ function ExpandingShelters() {
               <h3 className="expanding-shelters-product-title">Hardwall Expandable Redeployable Container™ (HERCon™)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="HERCon"
                   className="expanding-shelters-product-image"
                 />
@@ -82,7 +82,7 @@ function ExpandingShelters() {
               <h3 className="expanding-shelters-product-title">Air-Transportable Expandable Pallet Shelter (ATEPS)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/placeholder.jpg" 
+                  src="/images/placeholder.jpg" 
                   alt="ATEPS"
                   className="expanding-shelters-product-image"
                 />

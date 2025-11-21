@@ -37,10 +37,13 @@ function Products() {
               </Link>
               <div className="products-category-image-wrapper">
                 <img 
-                  src="/soft shelter.jpg" 
+                  src="/images/soft shelter.jpg" 
                   alt="Soft Shelters"
                   className="products-category-image"
                 />
+                <div className="products-category-cta">
+                  <span className="products-category-cta-text">Click to see more</span>
+                </div>
               </div>
               <p className="products-category-bullet">
                 <span className="products-category-bullet-arrow">▶</span>
@@ -53,10 +56,13 @@ function Products() {
               </Link>
               <div className="products-category-image-wrapper">
                 <img 
-                  src="/expandablecontainer1.jpg" 
+                  src="/images/expandablecontainer1.jpg" 
                   alt="Expanding Shelters"
                   className="products-category-image"
                 />
+                <div className="products-category-cta">
+                  <span className="products-category-cta-text">Click to see more</span>
+                </div>
               </div>
               <p className="products-category-bullet">
                 <span className="products-category-bullet-arrow">▶</span>
@@ -69,10 +75,13 @@ function Products() {
               </Link>
               <div className="products-category-image-wrapper">
                 <img 
-                  src="/solarshade6.jpg" 
+                  src="/images/solarshade6.jpg" 
                   alt="Accessories"
                   className="products-category-image"
                 />
+                <div className="products-category-cta">
+                  <span className="products-category-cta-text">Click to see more</span>
+                </div>
               </div>
               <p className="products-category-bullet">
                 <span className="products-category-bullet-arrow">▶</span>

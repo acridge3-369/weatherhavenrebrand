@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 8rem 2rem 4rem 2rem;
   min-height: 100vh;
-  background-image: url('/rocksimagenumber2.png');
+  background-image: url('/images/rocksimagenumber2.png');
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -206,6 +206,7 @@
   height: 380px;
   overflow: hidden;
   border-radius: 8px;
+  position: relative;
 }
 
 .products-category-image {
@@ -213,6 +214,41 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.products-category-item:hover .products-category-image {
+  transform: scale(1.05);
+}
+
+.products-category-cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.products-category-item:hover .products-category-cta {
+  opacity: 1;
+}
+
+.products-category-cta-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .products-category-bullet {

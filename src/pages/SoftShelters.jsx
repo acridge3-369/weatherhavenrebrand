@@ -10,7 +10,7 @@ function SoftShelters() {
     {
       title: 'Modular Tent System',
       description: 'The Tactical, Versatile Shelter Solution. The Modular Tentage System (MTS) is one of the most thermally efficient and robust tactical shelters in the world. This capability comes in a selection of sizes, and is used for a number of field applications. The MTS is particularly popular with military forces due to its flexibility in design to form larger complexes, such as operations centres and medical facilities.',
-      images: ['/554_uk_MTS-Shelters-in-the-Middle-East.jpg', '/command post.jpg', '/military dining hall.jpg', '/hosptial.jpg'],
+      images: ['/images/554_uk_MTS-Shelters-in-the-Middle-East.jpg', '/images/command post.jpg', '/images/military dining hall.jpg', '/images/hosptial.jpg'],
       features: [
         'Complete Kitchens & Dining Facilities',
         'Offices',
@@ -52,7 +52,7 @@ function SoftShelters() {
     {
       title: 'Series 4',
       description: 'The Original Weatherhaven Shelter. The Series 4 is a high-performance mobile shelter used worldwide in all climates, including the polar regions. This shelter is widely utilized for workforce housing, as well as by military forces for accommodation, recreation, and first-aid units.',
-      images: ['/404_uk_Series-4-Staff-Camp-Canada-2048x1419.jpeg', '/hosptial.jpg', '/military dining hall.jpg', '/storage.jpg'],
+      images: ['/images/404_uk_Series-4-Staff-Camp-Canada-2048x1419.jpeg', '/images/hosptial.jpg', '/images/military dining hall.jpg', '/images/storage.jpg'],
       features: [
         'Complete Kitchen & Dining Facilities',
         'Offices',
@@ -100,7 +100,7 @@ function SoftShelters() {
     {
       title: 'Series 8',
       description: 'The Lightweight Version Of The Series 4. The Series 8 shelter is designed for warmer climates, specifically locations without high winds or snow loads. With a lower price point and fewer components than the Series 4, this shelter is typically used for equipment maintenance, storage, or temporary manufacturing facilities.',
-      images: ['/soft shelter.jpg', '/storage.jpg', '/military maintenance.jpg', '/expandablecontainer1.jpg'],
+      images: ['/images/soft shelter.jpg', '/images/storage.jpg', '/images/military maintenance.jpg', '/images/expandablecontainer1.jpg'],
       features: [
         'Equipment and storage facility',
         'Complete kitchen and dining facilities',
@@ -145,7 +145,7 @@ function SoftShelters() {
     {
       title: 'MEX-26',
       description: 'Built For Demanding Logistics & Operations. The MEX-26™ (Maintenance Extended Height 26\' wide) fabric shelter is a modular structure designed specifically for the tactical frontline and second-line applications of vehicle and aircraft maintenance.',
-      images: ['/soft shelter.jpg', '/military maintenance.jpg', '/command post.jpg', '/storage.jpg'],
+      images: ['/images/soft shelter.jpg', '/images/military maintenance.jpg', '/images/command post.jpg', '/images/storage.jpg'],
       features: [
         'Military deployments, such as armoured vehicle and helicopter maintenance',
         'Armoured vehicle repairs on optics and weapons requiring a dust-free environment'
@@ -186,7 +186,7 @@ function SoftShelters() {
     {
       title: 'Polar Shelters',
       description: 'Shelter In Extreme Cold & Dry Locations. Weatherhaven supplies Polar fabric shelters to several national science organizations and private-sector operators for use in places like Antarctica, the High Canadian Arctic & Greenland.',
-      images: ['/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg', '/mountainphoto.png', '/soft shelter.jpg', '/command post.jpg'],
+      images: ['/images/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg', '/images/mountainphoto.png', '/images/soft shelter.jpg', '/images/command post.jpg'],
       features: [
         'Arctic Expeditions',
         'Advanced Base Camps',
@@ -227,7 +227,7 @@ function SoftShelters() {
     {
       title: 'RDMSS',
       description: 'Rapidly Deployed Modular Shelter System (RDMSS). The RDMSS is the most advanced softwall shelter system in Weatherhaven\'s fleet. Driven by stringent military requirements, the RDMSS offers users a rapidly deployed capability for any geographic and/or climatic zone in the world. The RDMSS includes all of the time-proven and trusted shelter features of Weatherhaven\'s global product line, providing Commanders with the convenience of deploying a single shelter system for both initial standard (0-6 months) and temporary standard (6-24 months) missions. The RDMSS comes in three models: RDMSS-O, RDMSS-P, and RDMSS-Op, and can be supplied in multiple colours.',
-      images: ['/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg', '/command post.jpg', '/soft shelter.jpg', '/military maintenance.jpg'],
+      images: ['/images/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg', '/images/command post.jpg', '/images/soft shelter.jpg', '/images/military maintenance.jpg'],
       features: [
         'Full blackout',
         'Operational temperature range: -51°C to +49°C',
@@ -302,7 +302,7 @@ function SoftShelters() {
           </p>
           <div className="soft-shelters-image-wrapper">
             <img 
-              src="/soft shelter.jpg" 
+              src="/images/soft shelter.jpg" 
               alt="Soft Shelters"
               className="soft-shelters-main-image"
             />
@@ -317,7 +317,7 @@ function SoftShelters() {
                 <h3 className="soft-shelters-product-title">{product.title}</h3>
                 <div className="soft-shelters-product-image-wrapper">
                   <img 
-                    src={product.images[0] || '/placeholder.jpg'} 
+                    src={product.images[0] || '/images/placeholder.jpg'} 
                     alt={product.title}
                     className="soft-shelters-product-image"
                   />

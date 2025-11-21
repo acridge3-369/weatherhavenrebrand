@@ -13,7 +13,7 @@
   justify-content: center;
   padding: 1rem 2rem 4rem 2rem;
   min-height: 120vh;
-  background-image: url('/rocksimagenumber2.png');
+  background-image: url('/images/rocksimagenumber2.png');
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -536,7 +536,7 @@
 .faq-section {
   padding: 6rem 2rem;
   background: #3F3F3F;
-  background-image: url('/554_uk_MTS-Shelters-in-the-Middle-East.jpg');
+  background-image: url('/images/554_uk_MTS-Shelters-in-the-Middle-East.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
