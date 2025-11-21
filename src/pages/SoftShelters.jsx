@@ -10,7 +10,8 @@ function SoftShelters() {
     {
       title: 'Modular Tent System',
       description: 'The Tactical, Versatile Shelter Solution. The Modular Tentage System (MTS) is one of the most thermally efficient and robust tactical shelters in the world. This capability comes in a selection of sizes, and is used for a number of field applications. The MTS is particularly popular with military forces due to its flexibility in design to form larger complexes, such as operations centres and medical facilities.',
-      images: ['/images/mts11.jpg', '/images/mts2.png', '/images/mts3.jpg', '/images/mts4.jpg', '/images/mts9.jpg', '/images/mts10.jpg'],
+      productCardImage: '/images/mts.jpg',
+      images: ['/images/mts11.jpg', '/images/mts.jpg', '/images/mts2.png', '/images/mts3.jpg', '/images/mts4.jpg', '/images/mts9.jpg', '/images/mts10.jpg'],
       features: [
         'Complete Kitchens & Dining Facilities',
         'Offices',
@@ -317,7 +318,7 @@ function SoftShelters() {
                 <h3 className="soft-shelters-product-title">{product.title}</h3>
                 <div className="soft-shelters-product-image-wrapper">
                   <img 
-                    src={product.images[0] || '/images/placeholder.jpg'} 
+                    src={product.productCardImage || product.images[0] || '/images/placeholder.jpg'} 
                     alt={product.title}
                     className="soft-shelters-product-image"
                   />
