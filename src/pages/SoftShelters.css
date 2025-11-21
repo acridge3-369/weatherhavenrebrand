@@ -189,6 +189,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .soft-shelters-product-image {
@@ -201,6 +202,36 @@
 
 .soft-shelters-product-item:hover .soft-shelters-product-image {
   transform: scale(1.05);
+}
+
+.soft-shelters-product-cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.soft-shelters-product-item:hover .soft-shelters-product-cta {
+  opacity: 1;
+}
+
+.soft-shelters-product-cta-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .soft-shelters-product-description {

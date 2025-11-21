@@ -321,6 +321,9 @@ function SoftShelters() {
                     alt={product.title}
                     className="soft-shelters-product-image"
                   />
+                  <div className="soft-shelters-product-cta">
+                    <span className="soft-shelters-product-cta-text">Click to see more</span>
+                  </div>
                 </div>
                 <p className="soft-shelters-product-description">
                   {product.description}
