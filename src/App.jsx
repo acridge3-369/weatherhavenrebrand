@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Military from './pages/Military'
+import Medical from './pages/Medical'
 import Products from './pages/Products'
 import SoftShelters from './pages/SoftShelters'
 import ExpandingShelters from './pages/ExpandingShelters'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/products/expanding-shelters" element={<ExpandingShelters />} />
         <Route path="/products/accessories" element={<Accessories />} />
         <Route path="/military" element={<Military />} />
+        <Route path="/medical" element={<Medical />} />
       </Routes>
     </Router>
   )

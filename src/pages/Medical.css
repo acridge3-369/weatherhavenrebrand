@@ -1,0 +1,575 @@
+.medical-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem 2rem;
+  min-height: 100vh;
+  background-image: url('/images/rocksimagenumber2.png');
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.medical-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.medical-hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3F3F3F 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.medical-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.medical-hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.medical-hero-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.9;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.medical-image-bullets-section {
+  padding: 4rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-image-bullets-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.medical-image-bullets-image {
+  width: 70%;
+  max-width: 800px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  display: block;
+}
+
+.medical-bullets-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.medical-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.medical-bullet-arrow {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.medical-bullet-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.medical-bullet-text strong {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.medical-intro-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-intro-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.medical-section-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.medical-intro-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.medical-intro-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.medical-intro-item-single-line {
+  white-space: normal;
+}
+
+.medical-intro-item-single-line .medical-intro-text {
+  white-space: normal;
+}
+
+.medical-intro-item:hover {
+  transform: translateX(8px);
+}
+
+.medical-intro-arrow {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.medical-intro-item:hover .medical-intro-arrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+.medical-intro-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.medical-features-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-features-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.medical-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.medical-feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.medical-feature-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.medical-feature-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.medical-feature-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.medical-showcase-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-showcase-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.medical-gallery-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-gallery-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.medical-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.medical-gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  height: 300px;
+}
+
+.medical-gallery-item:hover {
+  transform: translateY(-4px);
+}
+
+.medical-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.medical-applications-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medical-applications-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.medical-applications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.medical-applications-list li {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.medical-applications-list li:nth-child(even) {
+  margin-left: 0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.medical-applications-list li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.medical-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0.5rem 0;
+}
+
+.medical-showcase-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.medical-showcase-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.medical-showcase-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.medical-showcase-image.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.medical-showcase-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  width: 100%;
+  text-transform: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.medical-showcase-bullet {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .medical-hero-section {
+    padding: 6rem 1rem 3rem 1rem;
+    min-height: 50vh;
+  }
+
+  .medical-hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+
+  .medical-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .medical-image-bullets-section {
+    padding: 3rem 1rem;
+  }
+
+  .medical-image-bullets-image {
+    width: 100%;
+    height: 400px;
+    max-width: none;
+  }
+
+  .medical-bullets-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .medical-bullet-item {
+    min-width: 100%;
+  }
+
+  .medical-bullet-text {
+    font-size: 1rem;
+  }
+
+  .medical-intro-section,
+  .medical-features-section,
+  .medical-showcase-section,
+  .medical-gallery-section,
+  .medical-applications-section {
+    padding: 4rem 1rem;
+  }
+
+  .medical-section-title {
+    font-size: 2rem;
+  }
+
+  .medical-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-applications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-applications-list li:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .medical-showcase-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .medical-showcase-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .medical-showcase-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+

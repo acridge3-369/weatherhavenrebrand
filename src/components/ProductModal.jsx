@@ -78,9 +78,14 @@ function ProductModal({ isOpen, onClose, product }) {
     setTimeout(() => setSlideshow2Transitioning(false), 1000)
   }
 
+  const firstImage = product.images && product.images.length > 0 ? product.images[0] : (product.productCardImage || '/images/mts.jpg')
+  const backgroundImageStyle = {
+    '--product-bg-image': `url('${firstImage}')`
+  }
+
   return (
     <div className="product-modal-overlay" onClick={onClose}>
-      <div className="product-modal-content" onClick={(e) => e.stopPropagation()}>
+      <div className="product-modal-content" onClick={(e) => e.stopPropagation()} style={backgroundImageStyle}>
         <button className="product-modal-close" onClick={onClose}>×</button>
         
         <div className="product-modal-header">
