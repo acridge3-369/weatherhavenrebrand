@@ -39,8 +39,9 @@ function ProductModal({ isOpen, onClose, product }) {
   if (!isOpen || !product) return null
 
   const images = product.images || []
-  const images1 = images.slice(0, Math.ceil(images.length / 2))
-  const images2 = images.slice(Math.ceil(images.length / 2))
+  const splitPoint = product.slideshow1Count || Math.ceil(images.length / 2)
+  const images1 = images.slice(0, splitPoint)
+  const images2 = images.slice(splitPoint)
 
   const nextSlide1 = () => {
     if (slideshow1Transitioning || images1.length <= 1) return

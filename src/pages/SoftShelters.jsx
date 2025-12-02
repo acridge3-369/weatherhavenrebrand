@@ -101,7 +101,8 @@ function SoftShelters() {
     {
       title: 'Series 8',
       description: 'The Lightweight Version Of The Series 4. The Series 8 shelter is designed for warmer climates, specifically locations without high winds or snow loads. With a lower price point and fewer components than the Series 4, this shelter is typically used for equipment maintenance, storage, or temporary manufacturing facilities.',
-      images: ['/images/soft shelter.jpg', '/images/storage.jpg', '/images/military maintenance.jpg', '/images/expandablecontainer1.jpg'],
+      images: ['/images/series8-exterior1.jpg', '/images/series8-exterior2.jpg', '/images/series8-exterior3.jpg', '/images/series8-interior1.jpg'],
+      slideshow1Count: 3,
       features: [
         'Equipment and storage facility',
         'Complete kitchen and dining facilities',
@@ -146,7 +147,8 @@ function SoftShelters() {
     {
       title: 'MEX-26',
       description: 'Built For Demanding Logistics & Operations. The MEX-26™ (Maintenance Extended Height 26\' wide) fabric shelter is a modular structure designed specifically for the tactical frontline and second-line applications of vehicle and aircraft maintenance.',
-      images: ['/images/soft shelter.jpg', '/images/military maintenance.jpg', '/images/command post.jpg', '/images/storage.jpg'],
+      images: ['/images/mexexterior-1.jpg', '/images/mexexterior-2.jpg', '/images/mexexterior-3.jpg', '/images/mexexterior-4.jpg', '/images/mexexterior-5.jpg', '/images/mexinterior-1.jpg'],
+      slideshow1Count: 5,
       features: [
         'Military deployments, such as armoured vehicle and helicopter maintenance',
         'Armoured vehicle repairs on optics and weapons requiring a dust-free environment'
@@ -187,7 +189,8 @@ function SoftShelters() {
     {
       title: 'Polar Shelters',
       description: 'Shelter In Extreme Cold & Dry Locations. Weatherhaven supplies Polar fabric shelters to several national science organizations and private-sector operators for use in places like Antarctica, the High Canadian Arctic & Greenland.',
-      images: ['/images/384_uk_Union-Glacier-Camp-scaled-e1755698384522-1024x450.jpg', '/images/mountainphoto.png', '/images/soft shelter.jpg', '/images/command post.jpg'],
+      images: ['/images/polar shelter 1.png', '/images/polar shelter 2.jpg', '/images/polar shelter 3.jpg', '/images/polar shelter 4.png', '/images/polar shelter 5.jpg', '/images/polar shelter 6.jpg', '/images/polar shelter 7.jpg', '/images/polar shelter 8.jpg', '/images/polar shelter 9.jpg', '/images/polar shelter interior 1.jpg'],
+      slideshow1Count: 9,
       features: [
         'Arctic Expeditions',
         'Advanced Base Camps',
@@ -228,7 +231,7 @@ function SoftShelters() {
     {
       title: 'RDMSS',
       description: 'Rapidly Deployed Modular Shelter System (RDMSS). The RDMSS is the most advanced softwall shelter system in Weatherhaven\'s fleet. Driven by stringent military requirements, the RDMSS offers users a rapidly deployed capability for any geographic and/or climatic zone in the world. The RDMSS includes all of the time-proven and trusted shelter features of Weatherhaven\'s global product line, providing Commanders with the convenience of deploying a single shelter system for both initial standard (0-6 months) and temporary standard (6-24 months) missions. The RDMSS comes in three models: RDMSS-O, RDMSS-P, and RDMSS-Op, and can be supplied in multiple colours.',
-      images: ['/images/387_uk_RDMSS-Deployed-Behind-Barbed-Wire-1024x683.jpg', '/images/command post.jpg', '/images/soft shelter.jpg', '/images/military maintenance.jpg'],
+      images: ['/images/rdmss.jpg'],
       features: [
         'Full blackout',
         'Operational temperature range: -51°C to +49°C',
