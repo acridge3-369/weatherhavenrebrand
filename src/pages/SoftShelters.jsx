@@ -53,7 +53,7 @@ function SoftShelters() {
     {
       title: 'Series 4',
       description: 'The Original Weatherhaven Shelter. The Series 4 is a high-performance mobile shelter used worldwide in all climates, including the polar regions. This shelter is widely utilized for workforce housing, as well as by military forces for accommodation, recreation, and first-aid units.',
-      images: ['/images/404_uk_Series-4-Staff-Camp-Canada-2048x1419.jpeg', '/images/hosptial.jpg', '/images/military dining hall.jpg', '/images/storage.jpg'],
+      images: ['/images/series4-exterior1.jpg', '/images/series4-exterior2.jpg', '/images/series4-exterior3.jpg', '/images/series4-exterior4.jpg', '/images/series4-exterior5.jpg', '/images/series4-interior1.jpg', '/images/series4-interior2.jpg', '/images/series4-interior-3.jpg', '/images/series4-interior4.jpg', '/images/404_uk_Series-4-Staff-Camp-Canada-2048x1419.jpeg', '/images/hosptial.jpg', '/images/military dining hall.jpg', '/images/storage.jpg'],
       features: [
         'Complete Kitchen & Dining Facilities',
         'Offices',

@@ -1,0 +1,335 @@
+.company-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem 2rem;
+  min-height: 100vh;
+  background-image: url('/images/rocksimagenumber2.png');
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.company-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.company-hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #3F3F3F 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.company-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.company-hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.company-hero-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.9;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.company-team-section {
+  padding: 6rem 2rem;
+  background: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.company-team-content {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.company-section-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.company-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  width: 100%;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.company-member-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              background 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.company-member-card:nth-child(1) { animation-delay: 0.1s; }
+.company-member-card:nth-child(2) { animation-delay: 0.2s; }
+.company-member-card:nth-child(3) { animation-delay: 0.3s; }
+.company-member-card:nth-child(4) { animation-delay: 0.4s; }
+.company-member-card:nth-child(5) { animation-delay: 0.5s; }
+.company-member-card:nth-child(6) { animation-delay: 0.6s; }
+.company-member-card:nth-child(7) { animation-delay: 0.7s; }
+.company-member-card:nth-child(8) { animation-delay: 0.8s; }
+.company-member-card:nth-child(9) { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.company-member-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.company-member-image-wrapper {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-member-image {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.05);
+  filter: brightness(0.95);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.company-member-image-wrapper:has(img[src=""]) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.company-member-card:hover .company-member-image-wrapper {
+  transform: scale(1.01);
+}
+
+.company-member-card:hover .company-member-image {
+  transform: scale(1.08);
+  filter: brightness(1.05);
+}
+
+.company-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.company-member-name {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-member-card:hover .company-member-name {
+  color: #ffffff;
+}
+
+.company-member-credentials {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-style: italic;
+}
+
+.company-member-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.75rem;
+}
+
+.company-member-bio {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  text-align: left;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-member-card:hover .company-member-bio {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 1024px) {
+  .company-team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-hero-section {
+    padding: 6rem 1rem 3rem 1rem;
+    min-height: 50vh;
+  }
+
+  .company-hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+
+  .company-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .company-team-section {
+    padding: 4rem 1rem;
+  }
+
+  .company-section-title {
+    font-size: 2rem;
+  }
+
+  .company-team-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .company-member-card {
+    padding: 1.5rem;
+  }
+
+  .company-member-image-wrapper {
+    height: 250px;
+    min-height: 250px;
+  }
+  
+  .company-member-image {
+    min-height: 250px;
+  }
+
+  .company-member-name {
+    font-size: 1.3rem;
+  }
+
+  .company-member-title {
+    font-size: 1rem;
+  }
+
+  .company-member-bio {
+    font-size: 0.95rem;
+  }
+}
+
