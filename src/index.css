@@ -2,6 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Allow text selection in input fields and textareas */
+input, textarea, [contenteditable="true"] {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 html {
@@ -30,6 +42,23 @@ body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
+  cursor: default;
+}
+
+/* Prevent text cursor (I-beam) from appearing when clicking on text */
+p, h1, h2, h3, h4, h5, h6, span, div, li, td, th, label {
+  cursor: default;
+  caret-color: transparent;
+}
+
+/* Keep pointer cursor for clickable elements */
+a, button, [role="button"], [onclick], .nav-item {
+  cursor: pointer;
+}
+
+/* Hide caret in non-input elements */
+*:not(input):not(textarea):not([contenteditable="true"]) {
+  caret-color: transparent;
 }
 
 #root {

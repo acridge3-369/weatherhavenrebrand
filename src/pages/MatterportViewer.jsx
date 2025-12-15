@@ -33,6 +33,11 @@ function MatterportViewer() {
       
       <section className="matterport-viewer-section">
         <div className="matterport-viewer-content">
+          <div className="matterport-description">
+            <p className="matterport-description-text">
+              Matterport interior capture made for seamless interior exploration of all WEATHERHAVEN SHELTERS
+            </p>
+          </div>
           <div className="matterport-controls">
             <div className="matterport-input-group">
               <label htmlFor="matterport-id" className="matterport-label">

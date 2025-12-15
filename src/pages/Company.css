@@ -122,14 +122,12 @@
 }
 
 .company-member-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-              background 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  transition: background 0.2s ease, opacity 0.2s ease;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -159,52 +157,38 @@
 }
 
 .company-member-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 1;
 }
 
 .company-member-image-wrapper {
   width: 100%;
-  height: 300px;
-  min-height: 300px;
+  height: 350px;
+  min-height: 350px;
   overflow: hidden;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-shrink: 0;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.2s ease;
 }
 
 .company-member-image {
   width: 100%;
   height: 100%;
-  min-height: 300px;
+  min-height: 350px;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 30%;
   display: block;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(255, 255, 255, 0.05);
-  filter: brightness(0.95);
   max-width: 100%;
   max-height: 100%;
 }
 
 .company-member-image-wrapper:has(img[src=""]) {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.company-member-card:hover .company-member-image-wrapper {
-  transform: scale(1.01);
-}
-
-.company-member-card:hover .company-member-image {
-  transform: scale(1.08);
-  filter: brightness(1.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .company-member-info {
