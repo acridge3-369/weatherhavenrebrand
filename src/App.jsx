@@ -8,6 +8,7 @@ import ExpandingShelters from './pages/ExpandingShelters'
 import Accessories from './pages/Accessories'
 import Innovation from './pages/Innovation'
 import Company from './pages/Company'
+import MatterportViewer from './pages/MatterportViewer'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/medical" element={<Medical />} />
         <Route path="/innovation" element={<Innovation />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/matterport" element={<MatterportViewer />} />
       </Routes>
     </Router>
   )

@@ -288,6 +288,55 @@ function ExpandingShelters() {
     additionalInfo: []
   }
 
+  const atepsProduct = {
+    title: 'Air-Transportable Expandable Pallet Shelter (ATEPS)',
+    description:
+      'A tactical, air-transportable expandable pallet shelter designed for quick, robust deployment in expeditionary and emergency response operations. ATEPS enables militaries to rapidly establish forward operating bases, medical facilities, and specialised capabilities while reducing long-term lifecycle costs.',
+    images: ['/images/ateps1.jpg', '/images/ateps2.jpg'],
+    slideshow1Count: 2,
+    features: [
+      'Tailored to fit onto a single 463L pallet and quickly expands to a much larger footprint',
+      'Insulated aluminium core with PVC cover system and removable zippered fabric doors',
+      'Hard-wall entrance door with built-in service opening for ECU or mission-specific equipment',
+      'Rugged, military-grade aluminium construction suitable for air transport height constraints',
+      'External tie-downs, top-lift sling and forklift pockets for flexible handling',
+      'Two-person setup in under 10 minutes and easily interconnected with other structures',
+      'Wear-resistant, non-slip floor with D-ring tiedown points for secure heavy loads',
+      'External ports for rapid electrical, communications, and ECU connections'
+    ],
+    specificationSections: [
+      {
+        title: 'Key Characteristics',
+        items: [
+          'Configured to fit a single 463L pallet (approx. 84" x 104") and expands to a footprint of roughly 244" x 104" with an external height of about 91"',
+          'Insulated aluminium core (floor, walls, and roof) with PVC cover system',
+          'Removable zippered fabric doors on each side for flexible access',
+          'Hard-wall entrance door in the core wall with integrated service opening'
+        ]
+      },
+      {
+        title: 'Transport & Handling',
+        items: [
+          'Rugged construction using military-grade aluminium, weighing approximately 2,500 lbs',
+          'Suitable for transport on fixed-wing aircraft constrained to heights over roughly 92"',
+          'External tie-down points and four-point sling load provisions for top lifting',
+          'Four-way forklift pockets for bottom lifting and easy handling in the field'
+        ]
+      },
+      {
+        title: 'Deployment & Integration',
+        items: [
+          'Two-person setup in less than 10 minutes',
+          'Can be easily interconnected with other structures to create larger facilities',
+          'Wear-resistant, non-slip floor coating',
+          'D-ring tiedown points support loads up to approximately 7,500 lbs',
+          'External, built-in ports for rapid electrical, communications, and ECU connections'
+        ]
+      }
+    ],
+    additionalInfo: []
+  }
+
   const handleMeccClick = () => {
     setSelectedProduct(meccProduct)
   }
@@ -302,6 +351,10 @@ function ExpandingShelters() {
 
   const handleTreccClick = () => {
     setSelectedProduct(treccProduct)
+  }
+
+  const handleAtepsClick = () => {
+    setSelectedProduct(atepsProduct)
   }
 
   const handleCloseModal = () => {
@@ -408,17 +461,23 @@ function ExpandingShelters() {
                 A hardwall, ISO-based expandable container system that delivers cost-effective, semi-permanent redeployable infrastructure in 4-foot and 8-foot configurations.
               </p>
             </div>
-            <div className="expanding-shelters-product-item">
+            <div 
+              className="expanding-shelters-product-item expanding-shelters-product-item-clickable"
+              onClick={handleAtepsClick}
+            >
               <h3 className="expanding-shelters-product-title">Air-Transportable Expandable Pallet Shelter (ATEPS)</h3>
               <div className="expanding-shelters-product-image-wrapper">
                 <img 
-                  src="/images/placeholder.jpg" 
+                  src="/images/ateps1.jpg" 
                   alt="ATEPS"
                   className="expanding-shelters-product-image"
                 />
+                <div className="expanding-shelters-product-cta">
+                  <span className="expanding-shelters-product-cta-text">Click to see more</span>
+                </div>
               </div>
               <p className="expanding-shelters-product-description">
-                Tactical, quick-erect, robust shelter solution for expeditionary and emergency response operations. Allows militaries to safely and swiftly deploy forward operating bases, medical facilities, and specialized capabilities.
+                An air-transportable, quick-erect expandable pallet shelter for rapidly deploying forward operating bases, medical facilities, and specialised mission capabilities.
               </p>
             </div>
           </div>
