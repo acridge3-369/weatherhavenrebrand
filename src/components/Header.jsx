@@ -11,6 +11,7 @@ function Header() {
         <Link to="/medical" className="nav-item">Medical</Link>
         <Link to="/innovation" className="nav-item">Innovation</Link>
         <Link to="/company" className="nav-item">Company</Link>
+        <Link to="/matterport" className="nav-item">3D Tour</Link>
       </nav>
     </header>
   )
